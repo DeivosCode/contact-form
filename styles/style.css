@@ -280,6 +280,7 @@ textarea::placeholder {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 6px;
 }
 
 .footer__link {
@@ -332,4 +333,12 @@ textarea::placeholder {
     border-radius: 4px;
     color: #fff;
     transform: scale(1.5);
+}
+
+.search-box__btn {
+    transition: .3s ease-out;
+}
+
+.search-box__btn:hover {
+    opacity: 1;
 }
