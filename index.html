@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/179aa67731.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="head">
+        <div class="logo">
+            <img class="logo__img" src="img/logo.svg" alt="logo">
+            <p class="logo__text">World and <span class="logo__text--bold"> Earth</span></p>
+        </div>
+        <div class="search-box">
+            <input class="search-box__txt" type="text" name="" placeholder="Type to search">
+            <a class="search-box__btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <div class="profile">
+            <img class="profile__img" src="img/avatar.svg" alt="avatar">
+            <ul class="profile__arrow">
+                <li>
+                    <i class="fas fa-chevron-down profile__arrow"></i>
+                    <ul class="profile-menu-list">
+                        <li class="profile-menu-list__option">Log Out</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="form-and-map">
+
+        <div class="left-screen">
+            <div class="contact-form-section">
+                <h1 class="contact-form__header">
+                    Contact Us
+                </h1>
+                <p class="contact-form__description">
+                    We are always here to help.
+                </p>
+
+                <div class="contact-form">
+                    <div class="input-with-icon">
+                        <input class="form contact-form__username" type="text" name="username" placeholder="Name"
+                            autocomplete="off">
+                        <i class="fas fa-user-ninja form__icon"></i>
+                    </div>
+                    <div class="input-with-icon">
+                        <input class="form contact-form__username" type="email" name="email" placeholder="Email"
+                            autocomplete="off">
+                        <i class="fas fa-envelope form__icon"></i>
+                    </div>
+                    <div class="input-with-icon">
+                        <input data-mask="000 000 000" class="form contact-form__username" type="tel" name="number"
+                            placeholder="Number">
+                        <i class="fas fa-phone-alt form__icon"></i>
+                    </div>
+
+                    <div class="contact-form__textarea">
+                        <textarea class="textarea" name="text" cols="30" rows="3"
+                            placeholder="Type anything"></textarea>
+                    </div>
+
+                    <div class="input-with-icon">
+                        <i class="fas fa-rocket form__icon form__icon--rocket"></i>
+                        <a href="#" class="form contact-form__button">
+                            Send
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="mail-phone contact-form__description">
+                    <p class="mail-phone__text">contact@youremail.com</p>
+                    <p class="mail-phone__text">Phone +55 11 99999-5899</p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="right-screen">
+            <div class="map">
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.0716105714705!2d30.431667813909197!3d50.439766791952216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc19f547785d%3A0xe7e588240239d964!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INCw0LLQuNCw0YbQuNC-0L3QvdGL0Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgg!5e0!3m2!1sru!2sua!4v1569695829611!5m2!1sru!2sua"
+                    frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__pages">
+            <a class="footer__link" href="#">About Us</a>
+            <a class="footer__link" href="#">Terms & Conditions</a>
+            <a class="footer__link" href="#">Privacy Policy</a>
+        </div>
+        <div class="footer__buttons">
+            <a class="footer__button-link" href="#">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a class="footer__button-link" href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="footer__button-link" href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <small class="footer__copyright">©2019 All rights reserved</small>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="plugins/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+</body>
+
+</html>
